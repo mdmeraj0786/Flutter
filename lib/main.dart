@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat_app/home_page.dart';
 
 void main(){
-  runApp(new MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,17 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
-    home: Material(
-       child:Center(
-         child: Container(
-           width: 300,
-            height: 100,
-            color: Colors.grey,
-            child: Center(child: Text("Welcome to 30 days of flutter")),
-       ),
-      ),
-     ),
+    home: HomePage(),
     );
   }
 }
